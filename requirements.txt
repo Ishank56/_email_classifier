@@ -1,0 +1,11 @@
+pandas
+scikit-learn
+torch
+transformers
+datasets
+accelerate
+fastapi
+uvicorn[standard]
+pydantic
+nlpaug
+nltk
