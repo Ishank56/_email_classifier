@@ -7,6 +7,8 @@ Part A (reply_classfier.py): Trains a baseline Logistic Regression model and fin
 
 Part B (app.py): Loads the saved model and deploys it as a web service with a user-friendly interface to classify new email replies in real-time.
 
+Collab link: [link](https://colab.research.google.com/drive/1MJHhHBY5vW4vAY8rQ79-cFpYXJOWw9hT?usp=sharing)
+
 Getting Started: A Step-by-Step Guide
 Follow these instructions to set up and run the entire project on your local machine.
 
@@ -68,3 +70,13 @@ In the address bar, navigate to:
 You will see the Email Reply Classifier interface. Type any sentence into the text box and click "Classify" to get a live prediction from your model!
 
 You have now successfully set up, trained, and deployed the entire project.
+
+## Part C – Short Answer Questions
+# 1. If you only had 200 labeled replies, how would you improve the model without collecting thousands more?
+With a small dataset of 200 replies, the best strategies would be data augmentation and leveraging a more suitable model architecture. I would use techniques like back-translation or synonym replacement to create new training examples, effectively multiplying the dataset's size. Additionally, I would experiment with a SetFit model, which is a few-shot learning technique using sentence transformers that often outperforms full fine-tuning on very small datasets.
+
+# 2. How would you ensure your reply classifier doesn’t produce biased or unsafe outputs in production?
+To ensure the classifier is safe, I would implement a two-layered approach: data auditing and output guardrails. First, I would carefully audit the training data to identify and remove any inherent biases or offensive language before training. Second, I would add a post-processing step to the API that checks the model's prediction against a blocklist of unsafe words and flags any outputs from low-confidence predictions for human review.
+
+# 3. Suppose you want to generate personalized cold email openers using an LLM. What prompt design strategies would you use to keep outputs relevant and non-generic?
+To generate high-quality, non-generic email openers, I would use few-shot prompting with rich context. The prompt would include 2-3 ideal examples of personalized openers to guide the model's style and tone effectively. I would also provide specific, structured context about the recipient, such as {Recipient Name: "Jane Doe", Company: "Acme Inc.", Recent Achievement: "Spoke at the Tech Summit"}, and add a clear instruction like "Draft a one-sentence opener congratulating them on their recent achievement."
