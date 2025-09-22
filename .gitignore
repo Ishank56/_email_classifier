@@ -1,0 +1,21 @@
+# Python virtual environment
+# This is the most important line to prevent uploading thousands of library files.
+.venv/
+venv/
+
+# Python cache files
+# These are temporary files Python creates automatically.
+__pycache__/
+
+# VS Code editor settings
+# These are specific to your computer and shouldn't be in the repository.
+.vscode/
+
+# Results from Hugging Face Trainer
+# These are temporary output folders from the training script.
+results/
+logs/
+
+# Saved model files
+# CRITICAL: This prevents your large model file (200MB+) from being uploaded.
+reply_classifier_model/
