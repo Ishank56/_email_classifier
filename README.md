@@ -1,4 +1,4 @@
-#Email Reply Classifier: ML Pipeline & FastAPI
+# Email Reply Classifier: ML Pipeline & FastAPI
 This project contains a complete machine learning pipeline to train an email reply classifier and a FastAPI application to serve the model through a simple web interface.
 
 The project is divided into two main parts:
