@@ -8,6 +8,7 @@ This project also includes some changes made as per requirement:
 -Interactive UI along with FastAPI integration for better testing experience
 
 HOWEVER IF YOU WANT TO VIEW THE ORIGINAL TASK WITHOUT THE EDITS, YOU CAN FOLLOW THE COLAB LINK.
+
 Collab link: [link](https://colab.research.google.com/drive/1MJHhHBY5vW4vAY8rQ79-cFpYXJOWw9hT?usp=sharing)
 
 The project is divided into two main parts:
