@@ -1,13 +1,20 @@
 # Email Reply Classifier: ML Pipeline & FastAPI
 This project contains a complete machine learning pipeline to train an email reply classifier and a FastAPI application to serve the model through a simple web interface.
 
+This project also includes some changes made as per requirement:
+-7 fields added to the dataset, to make the model understand better of prompts and chain of thought
+-Working with both Logistic Regression as base model and diltilbert model , and integrating better of the two.
+-Data Augmentation by replacing synonomous words in big sentences for the model to understand the context better.
+-Interactive UI along with FastAPI integration for better testing experience
+
+HOWEVER IF YOU WANT TO VIEW THE ORIGINAL TASK WITHOUT THE EDITS, YOU CAN FOLLOW THE COLAB LINK.
+Collab link: [link](https://colab.research.google.com/drive/1MJHhHBY5vW4vAY8rQ79-cFpYXJOWw9hT?usp=sharing)
+
 The project is divided into two main parts:
 
 Part A (reply_classfier.py): Trains a baseline Logistic Regression model and fine-tunes a DistilBERT transformer model on the provided dataset. It then evaluates both and saves the best-performing model.
 
 Part B (app.py): Loads the saved model and deploys it as a web service with a user-friendly interface to classify new email replies in real-time.
-
-Collab link: [link](https://colab.research.google.com/drive/1MJHhHBY5vW4vAY8rQ79-cFpYXJOWw9hT?usp=sharing)
 
 Getting Started: A Step-by-Step Guide
 Follow these instructions to set up and run the entire project on your local machine.
