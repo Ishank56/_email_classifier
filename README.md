@@ -2,9 +2,13 @@
 This project contains a complete machine learning pipeline to train an email reply classifier and a FastAPI application to serve the model through a simple web interface.
 
 This project also includes some changes made as per requirement:
+
 -7 fields added to the dataset, to make the model understand better of prompts and chain of thought
+
 -Working with both Logistic Regression as base model and diltilbert model , and integrating better of the two.
+
 -Data Augmentation by replacing synonomous words in big sentences for the model to understand the context better.
+
 -Interactive UI along with FastAPI integration for better testing experience
 
 HOWEVER IF YOU WANT TO VIEW THE ORIGINAL TASK WITHOUT THE EDITS, YOU CAN FOLLOW THE COLAB LINK.
