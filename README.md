@@ -57,6 +57,8 @@ python reply_classfier.py
 Let this script run to completion. You will see the evaluation scores for both models printed in the terminal.
 <img width="1919" height="1012" alt="Screenshot 2025-09-22 223347" src="https://github.com/user-attachments/assets/6e11f583-f421-442c-97a9-11c62e6ae6d1" />
 
+#AS SEEN WITH THE IMAGE THE DISTILBERT MODEL OUTPERFORMS THE BASELINE MODEL THUS USED IN THE PRODUCTION, BUT FOR FASTER RESPONSES AND ACCEPTING A LITTLE LESS ACCURACY AND F1 AS A TRADEOFF WE COULD ALSO SWITCH TO LOGISTIC ON PRODUCTION
+
 
 Step 5: Run the FastAPI Application (Part B)
 Once the model is trained and saved, you can start the web server. This command uses uvicorn to run the application defined in app.py.
